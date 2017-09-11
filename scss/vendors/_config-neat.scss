@@ -1,0 +1,29 @@
+// // Neat settings
+$disable-warnings: false;
+
+$neat-grid: (
+  columns: 12,
+  gutter: 20px
+);
+
+$neat-grid-full: (
+  columns: 12,
+  gutter: 0px
+);
+
+$small-media:  400px;
+$medium-media: 800px;
+$large-media:  1050px;
+
+$small-screen: ( 
+  media: "(max-width: #{$small-media})"
+);
+$medium-screen: (
+  media: "(min-width: #{$small-media}) and (max-width: #{$medium-media})"
+);
+$large-screen: (
+  media: "(min-width: #{$medium-media}) and (max-width: #{$large-media})"
+);
+$xl-screen: (
+  media: "(min-width: #{$large-media})"
+);

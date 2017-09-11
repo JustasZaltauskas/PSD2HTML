@@ -1,0 +1,37 @@
+//
+// Layout Rules
+//
+// Layout styles can also be divided into major and minor styles based on
+// reuse. Fox example, major layout styles can be dedicated for header and/or footer.
+html,
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-mercury;
+  font: {
+    size: $base-font-size;
+    family: $base-font-family;
+  };
+  line-height: $base-line-height; // To prevent the iPhone and iPad from inflating fonts
+}
+
+.page {
+  height: auto;
+}
+
+.page-body {
+  @include grid-container;
+  position: relative;
+  max-width: $width-body;
+  margin: 0 auto;
+}
+
+.grid-collapse {
+  @include grid-collapse;
+}

@@ -1,0 +1,52 @@
+.page-main {
+  margin: 40px 0 25px 0;
+  clear: both;
+}
+
+.page-content {
+  @include grid-column(8);
+
+  @include multiple-media($small-screen, $medium-screen) {
+    @include grid-column(12, $neat-grid-full);
+  }
+}
+
+.page-content__main {
+  background-color: $color-white;
+  padding: 25px 20px;
+}
+
+.page-content__left, .page-content__right {
+  @include grid-column(6);
+  @include margin(20px null 20px null);
+  box-sizing: border-box;
+  max-height: 180px;
+  padding: 20px;
+  background-color: $color-white;
+
+  @include multiple-media($small-screen, $medium-screen, $large-screen) {
+    @include grid-column(12);
+    padding: 10px;
+  }
+}
+
+.page-content__bottom {
+  @include grid-column(12);
+  display: inline-block;
+  background-color: $color-silver;
+
+  @include multiple-media($small-screen, $medium-screen) {
+    @include grid-column(12, $neat-grid-full);
+  }
+}
+
+.page-content__bottom-article {
+  @include grid-column(4);
+  padding: 20px 0;
+  box-sizing: border-box;
+
+  @include multiple-media($small-screen, $medium-screen) {
+    @include grid-column(12);
+    padding: 0;
+  }  
+}

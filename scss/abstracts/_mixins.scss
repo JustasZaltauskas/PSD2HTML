@@ -1,0 +1,7 @@
+@mixin multiple-media($media...) {
+  @each $query in $media {
+    @include grid-media($query) {
+      @content
+    }
+  }
+}

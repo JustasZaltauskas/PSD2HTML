@@ -1,0 +1,15 @@
+%default-button {
+  height: 36px;
+  width: 110px;
+  color: $color-white;
+  background-color: $color-razzmatazz;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  border: 0;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: lighten($color-razzmatazz, 10%);
+  }
+}

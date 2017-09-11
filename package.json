@@ -1,0 +1,39 @@
+{
+  "name": "Devbridge-FrontEnd",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/devbridge/Front-End-Toolkit.git"
+  },
+  "description": "Starter project",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bourbon": "^4.3.4",
+    "bourbon-neat": "^2.1.0",
+    "gulp": "*",
+    "gulp-open": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp build && gulp open"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devbridge/Front-End-Toolkit/issues"
+  },
+  "homepage": "https://github.com/devbridge/Front-End-Toolkit",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "browser-sync": "^2.18.13",
+    "gulp-clean-css": "^3.8.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-task-loader": "^1.4.4",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.1.0",
+    "sass-lint": "^1.11.1"
+  }
+}

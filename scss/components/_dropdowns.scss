@@ -1,0 +1,48 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+
+  a {
+    padding-bottom: 10px;
+  }
+  
+  &:hover {
+    .dropdown__menu {
+      display: block;
+    }
+  }
+}
+
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  z-index: 1;
+  margin-top: 10px;
+  padding: 0;
+  list-style-type: none;
+  left: -35%;
+
+  &:before {
+    @include triangle(20px, $color-tundora, up);
+    position: absolute;
+    content: "";
+    left: 65px;
+    top: -10px;
+  }
+
+  li {
+    padding: 0 10px;
+    background-color: $color-tundora;
+
+    a {
+      font-size: 12px;
+      line-height: 28px;
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: $color-dove-gray;
+    }
+  }
+}

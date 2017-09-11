@@ -1,0 +1,23 @@
+.page-content__list {
+  padding: 0;
+  
+  li {
+    padding: 5px;
+    list-style-type: none;
+    border-bottom: 1px solid $color-silver;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  a {
+    color: $color-lochmara;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: lighten($color-lochmara, 10%);
+    }
+  }
+}

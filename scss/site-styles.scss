@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+// Framework configuration or other settings
+@import "vendors/config-neat";
+@import "vendors/normalize";
+
+// Frameworks
+@import "bourbon";
+@import "neat";
+
+// Dependencies
+@import "abstracts/colors";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+// Global modules - modules shared between multiple projects (e.g. admin and public sites)
+@import "components/lists";
+@import "components/buttons";
+@import "components/forms";
+@import "components/dropdowns";
+
+// Styles for project pages or similar views - styles that are connected by content
+@import "base/notifications";
+@import "base/typography";
+@import "base/print";
+@import "base/base";
+
+// Structure
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+@import "layout/sections";
+@import "layout/aside";

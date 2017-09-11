@@ -1,0 +1,24 @@
+.page-sidebar__form {
+  fieldset {
+    padding: 20px;
+    border: 1px solid $color-gray;
+  }
+  input {
+    height: 31px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: $color-gray;
+    }
+  }
+  input, textarea {
+    width: 100%;
+    border: 1px solid $color-gray;
+    @include margin(10px null 20px null);
+  }
+  label {
+    display: block;
+    line-height: 14px;
+  }
+}

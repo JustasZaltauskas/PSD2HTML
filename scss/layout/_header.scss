@@ -1,0 +1,25 @@
+.page-header {
+  background-color: $color-razzmatazz;
+  height: $height-header;
+}
+
+.page-brand {
+  @include grid-column(4);
+  height: $height-header;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    bottom: 0;
+    margin: 20px 0;
+  }
+
+  @include multiple-media($small-screen, $medium-screen) {
+    @include grid-column(12);
+
+    h1 {
+      width: 100%;
+      text-align:center;
+    }
+  }
+}

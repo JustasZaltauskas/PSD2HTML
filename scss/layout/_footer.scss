@@ -1,0 +1,55 @@
+.page-footer {
+  height: $height-footer;
+  padding: 20px 0;
+  background-color: $color-dove-gray;
+  box-sizing: border-box;
+  font-size: 12px;
+
+  @include multiple-media($small-screen, $medium-screen) {
+    height: auto;
+  }
+
+  &__content {
+    display: inline-block;
+    position: relative;
+    
+    @include multiple-media($small-screen, $medium-screen) {
+      display: block;
+    }
+  }
+  &__text {
+    @include grid-column(10);
+
+    p {
+      color: $color-nobel;
+      margin: 0;
+      line-height: 14px;
+    }
+
+    @include multiple-media($small-screen, $medium-screen) {
+      @include grid-column(12)
+      @include margin(10px null 10px null);
+    }
+  }
+  &__brand {
+    @include grid-column(2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    text-align: right;
+    
+    h1 {
+      font-size: 31px;
+      line-height: 25px;
+      color: $color-white;
+    }
+
+    @include multiple-media($small-screen, $medium-screen) {
+      @include grid-column(12, $neat-grid-full);
+
+      position: relative;
+      text-align: center;
+    }
+  }
+}

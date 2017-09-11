@@ -1,0 +1,14 @@
+.page-sidebar {
+  @include grid-column(4);
+  margin-bottom: 20px;
+
+  hr {
+    height: 3px;
+    background-color: $color-black;
+    border: 0;
+  }
+
+  @include multiple-media($small-screen, $medium-screen) {
+    @include grid-column(12);    
+  }
+}
