@@ -35,5 +35,4 @@ module.exports = function() {
     })
     .pipe(cleanCSS())
     .pipe(gulp.dest(config.scss.cssFolder))
-
 };

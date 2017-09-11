@@ -10,4 +10,4 @@ module.exports = function() {
   });
 }
 
-module.exports.dependencies = ['watch-all'];
+module.exports.dependencies = ['watch-tasks:watch-all'];

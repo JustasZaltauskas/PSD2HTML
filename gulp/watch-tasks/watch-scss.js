@@ -4,6 +4,6 @@ var gulp = require('gulp'),
 
 module.exports = function() {
   gulp.watch(config.scss.src, function() {
-    runSequence('compile-scss', 'reload');
+    runSequence('compile-scss:compile-scss', 'browser-sync:reload');
   });
 };
