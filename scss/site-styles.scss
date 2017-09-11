@@ -8,7 +8,7 @@
 @import "bourbon";
 @import "neat";
 
-// Dependencies
+// Scss tools and helpers used across the project
 @import "abstracts/colors";
 @import "abstracts/variables";
 @import "abstracts/mixins";
@@ -20,7 +20,7 @@
 @import "components/forms";
 @import "components/dropdowns";
 
-// Styles for project pages or similar views - styles that are connected by content
+// Boilerplate code for the project
 @import "base/notifications";
 @import "base/typography";
 @import "base/print";
